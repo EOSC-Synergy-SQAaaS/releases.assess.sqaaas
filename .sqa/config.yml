@@ -15,50 +15,50 @@ sqa_criteria:
     repos:
       github.com/lmingari/releases git:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-carmine-audemer.sh
-        container: qc.acc_skimpy-amethyst-abyssinian
+        - /usr/bin/env sh .sqa/script.trippy-brown-akbash.sh
+        container: qc.acc_squirrely-indigo-scorpion
   QC.Doc:
     repos:
       github.com/lmingari/releases find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-orchid-drever.sh
-        container: qc.doc_silly-platinum-loon
+        - /usr/bin/env sh .sqa/script.sloppy-cerulean-scorpion.sh
+        container: qc.doc_lumpy-cerise-civet
       github.com/lmingari/releases git:
         commands:
-        - /usr/bin/env sh .sqa/script.hilly-corn-ibis.sh
-        container: qc.doc_bumpy-heliotrope-gerbil
+        - /usr/bin/env sh .sqa/script.flaky-fuchsia-vulture.sh
+        container: qc.doc_lanky-mustard-fousek
       github.com/lmingari/releases markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-silver-gar.sh
-        container: qc.doc_pasty-alizarin-impala
+        - /usr/bin/env sh .sqa/script.baggy-indigo-hornet.sh
+        container: qc.doc_skimpy-peach-vole
   QC.Lic:
     repos:
       github.com/lmingari/releases licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-charcoal-nightingale.sh
-        container: qc.lic_bluesy-coral-booby
+        - /usr/bin/env sh .sqa/script.baggy-firebrick-rottweiler.sh
+        container: qc.lic_pokey-wheat-corgi
   QC.Met:
     repos:
       github.com/lmingari/releases cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-wheat-raccoon.sh
-        container: qc.met_scaly-gamboge-lobster
+        - /usr/bin/env sh .sqa/script.trippy-magnolia-deer.sh
+        container: qc.met_flaky-puce-sheep
   QC.Sec:
     repos:
       github.com/lmingari/releases bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-viridian-ragdoll.sh
-        container: qc.sec_muzzy-orchid-quoll
+        - /usr/bin/env sh .sqa/script.wheezy-apricot-panda.sh
+        container: qc.sec_hilly-ruby-oyster
   QC.Sty:
     repos:
       github.com/lmingari/releases flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-champagne-wallaby.sh
-        container: qc.sty_chewy-azure-pig
+        - /usr/bin/env sh .sqa/script.hasty-tan-whale.sh
+        container: qc.sty_tasty-amethyst-albatross
   QC.Ver:
     repos:
       github.com/lmingari/releases get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-myrtle-raccoon.sh
-        container: qc.ver_cranky-blue-walrus
+        - /usr/bin/env sh .sqa/script.flaky-champagne-moose.sh
+        container: qc.ver_baggy-lilac-molly
 timeout: 5400
