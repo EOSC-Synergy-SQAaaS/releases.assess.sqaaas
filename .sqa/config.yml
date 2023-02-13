@@ -1,0 +1,64 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/1.7.8
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/lmingari/releases:
+      branch: master
+      repo: https://github.com/lmingari/releases
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/lmingari/releases git:
+        commands:
+        - /usr/bin/env sh .sqa/script.craggy-olivine-camel.sh
+        container: qc.acc_scummy-aqua-tuatara
+  QC.Doc:
+    repos:
+      github.com/lmingari/releases find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.craggy-flax-barnacle.sh
+        container: qc.doc_queasy-charcoal-frigatebird
+      github.com/lmingari/releases git:
+        commands:
+        - /usr/bin/env sh .sqa/script.clammy-beige-labradoodle.sh
+        container: qc.doc_woozy-jade-salamander
+      github.com/lmingari/releases markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.ugly-eggplant-starfish.sh
+        container: qc.doc_gamy-corn-otter
+  QC.Lic:
+    repos:
+      github.com/lmingari/releases licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.bumpy-orchid-dane.sh
+        container: qc.lic_flabby-cardinal-dachsbracke
+  QC.Met:
+    repos:
+      github.com/lmingari/releases cff-converter-python:
+        commands:
+        - /usr/bin/env sh .sqa/script.skimpy-sangria-discus.sh
+        container: qc.met_breezy-carmine-mouse
+  QC.Sec:
+    repos:
+      github.com/lmingari/releases bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.beady-smalt-guppy.sh
+        container: qc.sec_baggy-purple-dachshund
+  QC.Sty:
+    repos:
+      github.com/lmingari/releases flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.gummy-charcoal-discus.sh
+        container: qc.sty_pasty-puce-mayfly
+  QC.Ver:
+    repos:
+      github.com/lmingari/releases get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.baggy-auburn-kudu.sh
+        container: qc.ver_jumpy-amaranth-antelope
+timeout: 5400
