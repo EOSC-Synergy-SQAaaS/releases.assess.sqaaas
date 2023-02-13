@@ -15,50 +15,50 @@ sqa_criteria:
     repos:
       github.com/lmingari/releases git:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-olivine-camel.sh
-        container: qc.acc_scummy-aqua-tuatara
+        - /usr/bin/env sh .sqa/script.sickly-violet-coati.sh
+        container: qc.acc_pokey-aquamarine-birman
   QC.Doc:
     repos:
       github.com/lmingari/releases find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-flax-barnacle.sh
-        container: qc.doc_queasy-charcoal-frigatebird
+        - /usr/bin/env sh .sqa/script.trippy-amaranth-collie.sh
+        container: qc.doc_silly-platinum-tuatara
       github.com/lmingari/releases git:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-beige-labradoodle.sh
-        container: qc.doc_woozy-jade-salamander
+        - /usr/bin/env sh .sqa/script.ready-periwinkle-peccary.sh
+        container: qc.doc_seedy-seashell-lizard
       github.com/lmingari/releases markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-eggplant-starfish.sh
-        container: qc.doc_gamy-corn-otter
+        - /usr/bin/env sh .sqa/script.hasty-ochre-angelfish.sh
+        container: qc.doc_squeaky-olive-wolfhound
   QC.Lic:
     repos:
       github.com/lmingari/releases licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-orchid-dane.sh
-        container: qc.lic_flabby-cardinal-dachsbracke
+        - /usr/bin/env sh .sqa/script.muzzy-mustard-bandicoot.sh
+        container: qc.lic_wheezy-carmine-russel
   QC.Met:
     repos:
       github.com/lmingari/releases cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-sangria-discus.sh
-        container: qc.met_breezy-carmine-mouse
+        - /usr/bin/env sh .sqa/script.baggy-pumpkin-cuscus.sh
+        container: qc.met_skimpy-rust-cassowary
   QC.Sec:
     repos:
       github.com/lmingari/releases bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-smalt-guppy.sh
-        container: qc.sec_baggy-purple-dachshund
+        - /usr/bin/env sh .sqa/script.leaky-khaki-dodo.sh
+        container: qc.sec_trippy-chartreuse-dingo
   QC.Sty:
     repos:
       github.com/lmingari/releases flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-charcoal-discus.sh
-        container: qc.sty_pasty-puce-mayfly
+        - /usr/bin/env sh .sqa/script.craggy-ivory-tuatara.sh
+        container: qc.sty_droopy-celadon-centipede
   QC.Ver:
     repos:
       github.com/lmingari/releases get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-auburn-kudu.sh
-        container: qc.ver_jumpy-amaranth-antelope
+        - /usr/bin/env sh .sqa/script.wimpy-asparagus-indri.sh
+        container: qc.ver_grumpy-gold-labradoodle
 timeout: 5400
