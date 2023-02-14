@@ -15,50 +15,50 @@ sqa_criteria:
     repos:
       github.com/lmingari/releases git:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-periwinkle-owl.sh
-        container: qc.acc_trippy-olive-quoll
+        - /usr/bin/env sh .sqa/script.dorky-heliotrope-sparrow.sh
+        container: qc.acc_lumpy-dandelion-grasshopper
   QC.Doc:
     repos:
       github.com/lmingari/releases find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-emerald-mau.sh
-        container: qc.doc_lanky-asparagus-koala
+        - /usr/bin/env sh .sqa/script.tasty-cobalt-albatross.sh
+        container: qc.doc_crabby-sapphire-pig
       github.com/lmingari/releases git:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-silver-squid.sh
-        container: qc.doc_ready-beige-whale
+        - /usr/bin/env sh .sqa/script.breezy-olive-whippet.sh
+        container: qc.doc_slaphappy-red-raccoon
       github.com/lmingari/releases markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-azure-echidna.sh
-        container: qc.doc_lumpy-aqua-okapi
+        - /usr/bin/env sh .sqa/script.clammy-aquamarine-magpie.sh
+        container: qc.doc_lumpy-lavender-kiwi
   QC.Lic:
     repos:
       github.com/lmingari/releases licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-smalt-spoonbill.sh
-        container: qc.lic_seedy-lemon-cheetah
+        - /usr/bin/env sh .sqa/script.droopy-cinnabar-grouse.sh
+        container: qc.lic_flimsy-rose-frigatebird
   QC.Met:
     repos:
       github.com/lmingari/releases cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-silver-forest.sh
-        container: qc.met_snappy-carmine-wrasse
+        - /usr/bin/env sh .sqa/script.breezy-zucchini-wolverine.sh
+        container: qc.met_thirsty-sangria-guppy
   QC.Sec:
     repos:
       github.com/lmingari/releases bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-cornflower-worm.sh
-        container: qc.sec_beady-heliotrope-cheetah
+        - /usr/bin/env sh .sqa/script.snippy-brown-koala.sh
+        container: qc.sec_frumpy-firebrick-bulldog
   QC.Sty:
     repos:
       github.com/lmingari/releases flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-amethyst-toad.sh
-        container: qc.sty_gimpy-tangerine-snail
+        - /usr/bin/env sh .sqa/script.silly-cobalt-oyster.sh
+        container: qc.sty_scummy-alizarin-dolphin
   QC.Ver:
     repos:
       github.com/lmingari/releases get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-magenta-goat.sh
-        container: qc.ver_geeky-vermilion-chipmunk
+        - /usr/bin/env sh .sqa/script.smelly-malachite-lion.sh
+        container: qc.ver_wimpy-brown-burmese
 timeout: 5400
